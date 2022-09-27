@@ -1,8 +1,19 @@
+
+:root {
+  --primaryColor: #fff;
+  --navColor1: #21292c;
+  --navColor2: #aa3e39;
+  --navColor3: #aa6e39;
+  --navColor4: #236267;
+  --navColor5: #2c8437;
+}
+
 html {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  background: #000;
   min-height: 100vh;
 }
