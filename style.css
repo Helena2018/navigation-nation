@@ -184,3 +184,14 @@ section#contact {
   background-color: var(--navColor5);
 }
 
+@media (max-width: 600px) {
+  section#home a {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .menu-bars {
+    top: 0.5rem;
+    right: 1rem;
+  }
+}
