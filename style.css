@@ -26,15 +26,20 @@ body {
   z-index: 9;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
   transform: translateX(-100vw);
 }
 
 .overlay-slide-left {
   transition: all 0.8s ease-in-out;
   transform: translateX(-100vw);
+}
+
+.overlay-slide-right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
 }
 
 nav,
@@ -61,6 +66,7 @@ nav li a {
   top: 45%;
   color: #fff;
   text-transform: uppercase;
+  letter-spacing: 4px;
   text-decoration: none;
   display: block;
   text-align: center;
@@ -104,6 +110,33 @@ nav li:nth-of-type(4) {
 nav li:nth-of-type(5) {
   background-color: var(--navColor5);
 }
+
+.slide-in-1 {
+  animation: slide-in 0.4s linear 0.2s both;
+}
+.slide-in-2 {
+  animation: slide-in 0.4s linear 0.4s both;
+}
+.slide-in-3 {
+  animation: slide-in 0.4s linear 0.6s both;
+}
+.slide-in-4 {
+  animation: slide-in 0.4s linear 0.8s both;
+}
+.slide-in-5 {
+  animation: slide-in 0.4s linear 1s both;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
 
 .slide-out-1 {
   animation: slide-out 0.3s linear 0.5s both;
@@ -163,7 +196,7 @@ nav li:nth-of-type(5) {
 }
 
 .change .bar3 {
-  transform: rotate(-45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
 }
 
 /* -- Section -- */
