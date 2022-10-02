@@ -111,6 +111,7 @@ nav li:nth-of-type(5) {
   background-color: var(--navColor5);
 }
 
+/* -- Slide in animation with delay for each nav item -- */
 .slide-in-1 {
   animation: slide-in 0.4s linear 0.2s both;
 }
@@ -136,8 +137,7 @@ nav li:nth-of-type(5) {
   }
 }
 
-
-
+/* -- Slide out animation with delay for each nav item -- */
 .slide-out-1 {
   animation: slide-out 0.3s linear 0.5s both;
 }
